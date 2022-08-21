@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Report Violations
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-padding">
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class = "ion-padding-bottom">
+      <div class="ion-text-start">
+        <h3>Report violations concerning your neighbors property in the app. 
+          Violations will be verified by a board member and fines will be applied to 
+          homes based on those findings. </h3>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-input type="date"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Address</ion-label>
+      <ion-input type="address"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Violation</ion-label>
+      <ion-input type="violation"></ion-input>
+    </ion-item>
+    </ion-list>
+
+  
+  <ion-content padding>
+      <h2>Take Photo of Violation</h2>
+
+      <button ion-button (click)="clickImage()">Take Photo</button>
+      <img src="{{clickedImagePath}}" />
+  </ion-content>
+  
+  <ion-fab top right edge><button ion-fab mini><ion-icon name="add">
+    </ion-icon></button></ion-fab>
+
+
+
+</ion-content>
+
+
